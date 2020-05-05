@@ -38,7 +38,6 @@ void MyThread::read()
     qDebug() << "reader " << readCount << " start to read...";
     QThread::sleep(4);
     qDebug() << "reader " << readCount << " read value: " << value;
-    QThread::sleep(1);
     // reading ends
 }
 
@@ -49,7 +48,6 @@ void MyThread::write()
     QThread::sleep(4);
     value = rand() % 20 + 1;
     qDebug() << "writer " << writeCount << " write value: " << value;
-    QThread::sleep(1);
     // writing ends
 }
 
